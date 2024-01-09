@@ -1,8 +1,12 @@
-import { useState } from "react";
+import React from "react";
+import ChildComponent from "./ChildComponent";
 
-const CounterWithFuncComponent = () => {
-  const [count, setCount] = useState(0);
+type TProps = {
+  count: number;
+  setCount: React.Dispatch<React.SetStateAction<number>>;
+};
 
+const CounterWithFuncComponent = ({ count, setCount }: TProps) => {
   return (
     <div style={{ border: "1px solid red", margin: 10, padding: 10 }}>
       <button
@@ -16,6 +20,7 @@ const CounterWithFuncComponent = () => {
       >
         {count}
       </button>
+      <ChildComponent count={count} />
     </div>
   );
 };
