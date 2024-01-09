@@ -1,10 +1,11 @@
 import "./App.css";
-import CounterWithClass from "./components/CounterWithClassComponent";
+
+import CounterWithFuncComponent from "./components/CounterWithFuncComponent";
 
 function App() {
   return (
-    <div>
-      <CounterWithClass />
+    <div style={{ border: "1px solid purple", margin: 20, padding: 20 }}>
+      <CounterWithFuncComponent />
     </div>
   );
 }
