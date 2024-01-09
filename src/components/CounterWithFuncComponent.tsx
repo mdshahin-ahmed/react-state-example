@@ -18,7 +18,7 @@ const CounterWithFuncComponent = ({ count, setCount }: TProps) => {
         }}
         onClick={() => setCount((prev) => prev + 1)}
       >
-        {count}
+        Click for update
       </button>
       <ChildComponent count={count} />
     </div>
