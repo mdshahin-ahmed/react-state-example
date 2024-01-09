@@ -6,10 +6,10 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h1 className="border border-purple-500 m-10 p-10">
-        {count}
+      <h6 className="border border-purple-500 m-10 p-10">
+        count = {count}
         <CounterWithFuncComponent count={count} setCount={setCount} />
-      </h1>
+      </h6>
     </div>
   );
 }

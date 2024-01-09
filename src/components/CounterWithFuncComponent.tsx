@@ -8,7 +8,7 @@ type TProps = {
 
 const CounterWithFuncComponent = ({ count, setCount }: TProps) => {
   return (
-    <div style={{ border: "1px solid red", margin: 10, padding: 10 }}>
+    <div className="border border-red-500 p-10 m-10">
       <button
         style={{
           background: "purple",
